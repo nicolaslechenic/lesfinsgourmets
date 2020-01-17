@@ -7,7 +7,18 @@
     <meta name="description" content="Bienvenue sur la presentation des differents produits de notre site.">
     <meta name="keywords" content="presentation, produits">
     <title>Présentation</title>
-    
+
+    <!------TYPE DE POLICE-------->
+    <link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!--APPEL à FONTAWESOME POUR LES ICONES-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+
 
     <!-----------FEUILLE DE STYLE DU SLIDER---------------->
 
@@ -22,43 +33,218 @@
 </head>
 
 <body>
-    <header class="front">
-        <!-------LOGIN-------->
-        <div class="connect">
-            <a href="login.html">Login</a>
-            <a href="inscription.html">Inscription</a>
+    <div class="container-fluid bg-dark" id="front">
+        <div id="cookies">
+            <span>
+                <b>En continuant de défiler</b>, vous acceptez l'utilisation de services tiers pouvant installer des
+                cookies
+            </span>
+            <a class="accepter" href="#" onclick="masquerBandeauCookies()"> ✓ Ok, tout accepter</a>
+            <!---TARGET SERT A OUVRIR LA CIBLE D'UN LIEN DANS UNE NOUVELLE PAGE-->
+            <a class="savoirPlus" href="https://www.google.fr" target="_blank">En savoir plus</a>
         </div>
 
-        <figure class="logo">
-            <img src="Public/Images/logos/les-fins-gourmets2.jpg" alt="les-fins-gourmets">
-        </figure>
-        <nav class="menuprincipal">
-            <!-------BURGER-------->
-            <input type="checkbox" id="menumobile" role="button">
-            <label for="menumobile" class="menumobile">
-                <img src="Public/Images/logos/burger.png">
-            </label>
 
-            <ul id="menuactive">
-                <li class="nav-item"><a href="index.html">Accueil</a></li>
-                <li class="nav-item"><a href="presentation.html">Présentation/à Propos</a></li>
-                <li class="nav-item"><a href="boutique.html">Boutique</a></li>
-                <li class="nav-item"><a href="blog.html">Blog</a></li>
-                <li class="nav-item"><a href="contact.html">Contact/Accès</a></li>
-            </ul>
-        </nav>
-    </header>
-    
+
+
+        <!-------LOGIN-------->
+        <div class="row">
+            <div class="col-md-6 bg-dark">
+                <form class="form-inline" action="/action_page.php">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Rechercher">
+
+                </form>
+            </div>
+
+            <!-- BUTTON TO OPEN THE MODAL-->
+            <div class="col-md-6 bg-dark">
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">
+                    Inscrivez-Vous
+                </button>
+                <!-- THE MODAL CONNECTION -->
+                <div class="modal fade" id="myModal1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+
+                            <!-- MODAL HEADER -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Se Connecter</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- MODAL BODY -->
+                            <div class="modal-body">
+                                <form>
+                                    <p><label for="nom">Nom:</label>
+                                        <input type="text" name="lastNameConnect" id="lastNameConnect"
+                                            placeholder="Votre Nom" required>
+                                        <span id="forgetLastNameConnect"></span>
+                                    </p>
+
+
+                                    <p><label for="lastname">Prénom:</label>
+                                        <input type="text" name="firstNameConnect" id="firstNameConnect"
+                                            placeholder="Votre Prénom" required>
+                                        <span id="forgetFirstNameConnect"></span>
+                                    </p>
+
+                                    <p><label for="password">Votre Mot de passe:</label>
+                                        <input type="text" name="passwordConnect" id="passwordConnect"
+                                            placeholder="Mot de passe" required>
+                                        <span id="forgetPasswordConnect"></span>
+                                    </p>
+
+                                    <p class="bouton"> <button id="bouton_envoieConnect" type="submit">Envoyer</button>
+                                        <button type="reset" value="Annuler">Annuler</button></p>
+
+                                </form>
+                            </div>
+
+                            <!-- MODAL FOOTER -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- BUTTON TO OPEN THE MODAL -->
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal1">
+                    Connection
+                </button>
+
+
+                <!-- THE MODAL INSCRIPTION -->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+
+                            <!-- MODAL HEADER -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">S'inscrire</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- MODAL BODY -->
+                            <div class="modal-body">
+                                <form>
+                                    <p><label for="mailSign">Votre Email:</label>
+                                        <input type="text" name="mailSign" id="mailSign" placeholder="Votre Email"
+                                            required>
+                                        <span id="forgetMailSign"></span=>
+                                    </p>
+
+
+                                    <p><label for="passwordSign">Votre Mot de passe:</label>
+                                        <input type="text" name="passwordSign" id="passwordSign"
+                                            placeholder="Mot de passe" required>
+                                        <span id="forgetPasswordSign"></span>
+                                    </p>
+
+                                    <p><label for="passwordConfirmSign">Confirmer Votre Mot de passe:</label>
+                                        <input type="text" name="passwordConfirmSign" id="passwordConfirmSign"
+                                            placeholder="Confirmer Mot de passe" required>
+                                        <span id="forgetPasswordConfirmSign"></span>
+                                    </p>
+
+                                    <p class="bouton"> <button id="bouton_envoieSign" type="submit">Envoyer</button>
+                                        <button type="reset" value="Annuler">Annuler</button></p>
+                                </form>
+                            </div>
+
+                            <!-- MODAL FOOTER -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-secondary">
+        <header class="container">
+            <figure class="logo">
+                <img src="Public/Images/logos/les-fins-gourmets2.jpg" alt="les-fins-gourmets">
+            </figure>
+
+            <!------MENU PRINCIPAL------>
+
+            <nav class="navbar navbar-expand-md justify-content-center navbar-dark">
+
+                <a class="nav-brand" href="#"> <i class="fas fa-home"></i></a>
+
+                <!-- TOGGLER/COLLAPSIBE BUTTON -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- LINKS -->
+                <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="presentation.html">Présentation</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+
+
+                            <!--DEBUT DU DROPDOWN-->
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                Boutique</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Épicerie Fine</a>
+                                <a class="dropdown-item" href="#">Pâtisseries</a>
+                                <a class="dropdown-item" href="#">Macarons</a>
+                                <a class="dropdown-item" href="#">Confiseries</a>
+                            </div>
+                        </li>
+                        <!--FIN DU DROPDOWN-->
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+        </header>
+    </div>
+
+
     <main class="container">
 
         <!---SLIDER----NIVO SLIDER-->
-        <div class="slider-wrapper theme-default">
+        <!---- <div class="slider-wrapper theme-default">
             <div id="slider" class="nivoSlider">
                 <img src="Public/Images/Photos/pain.jpg" alt="pain">
                 <img src="Public/Images/Photos/risoto.jpg" alt="risoto">
             </div>
-        </div>
-
+        </div>-->
+        <section id="slide">
+            <div id="slider1" class="container">
+                <img src="Public/Images/Photos/risoto.jpg" alt="risoto" id="slide2">
+                <div id="precedent" onclick="ChangeSlide(-1)">
+                    <</div> <div id="suivant" onclick="ChangeSlide(1)">>
+                </div>
+            </div>
+        </section>
 
         <h1>Présentation</h1>
 
@@ -81,40 +267,99 @@
 
     </main>
 
-    <footer class="pied">
-        <aside class="bas">
+    <!-----------FOOTER--------------->
+    <div class="container-fluid bg-secondary">
+        <footer class="pied">
+            <div class="row">
+                <div class="col-sm-12 col-lg-15 col-xs-14">
+                    <aside class="bas">
+                        <nav class="navbar navbar-expand-md justify-content-center navbar-dark">
+
+                            <a class="nav-brand" href="#"> <i class="fas fa-home"></i></a>
+
+                            <!-- TOGGLER/COLLAPSIBE BUTTON -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#collapsibleNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <!-- LINKS -->
+                            <div class="collapse2 navbar-collapse justify-content-center" id="collapsibleNavbar">
+                                <ul class="navbar-nav">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="cgv.html">CGV</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="plandusite.html">Plan du site</a>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
 
 
-            <div class="liens">
-                <ul>
-                    <li><a href="boutique.html"> Boutique</a></li>
-                    <li><a href="cgv.html"> CGV</a></li>
-                    <li><a href="plandusite.html">Plan du site</a></li>
-                    <li><a href="contact.html">Contacts</a></li>
-                    <li><a href="page-404.html">Newsletter</a></li>
-                    <li><a href="page-404.html">Agenda</a></li>
-                </ul>
+                                        <!--DEBUT DU DROPDOWN-->
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                                            data-toggle="dropdown">
+                                            Boutique</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Épicerie Fine</a>
+                                            <a class="dropdown-item" href="#">Pâtisseries</a>
+                                            <a class="dropdown-item" href="#">Macarons</a>
+                                            <a class="dropdown-item" href="#">Confiseries</a>
+                                        </div>
+                                    </li>
+                                    <!--FIN DU DROPDOWN-->
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Contact</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="newsletter.html">Newsletter</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="agenda.html">Agenda</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </nav>
+
+
+
+
+
+
+                        <div class="reseaux">
+                            <ul>
+                                <li><a href="#"><img src="Public/Images/pictos/facebook1.png"></a></li>
+                                <li><a href="#"><img src="Public/Images/pictos/instagram1.png"></a></li>
+                                <li><a href="#"><img src="Public/Images/pictos/twitter1.png"></a></li>
+                                <li><a href="#"><img src="Public/Images/pictos/pinterest1 (1).png"></a></li>
+                            </ul>
+                        </div>
+
+                    </aside>
+                    <p class="mentions">&copy; Greta 2019 tous droits réservés - <a href="mentionslegales.html">Mentions
+                            Légales</a></p>
+
+
+
+                </div>
             </div>
+        </footer>
+    </div>
 
 
 
-            <div class="reseaux">
-                <ul>
-                    <li><a href="#"><img src="Public/Images/pictos/facebook1.png"></a></li>
-                    <li><a href="#"><img src="Public/Images/pictos/instagram1.png"></a></li>
-                    <li><a href="#"><img src="Public/Images/pictos/twitter1.png"></a></li>
-                    <li><a href="#"><img src="Public/Images/pictos/pinterest1 (1).png"></a></li>
-                </ul>
-            </div>
-
-        </aside>
-
-        <p>&copy; Greta 2019 tous droits réservés - <a href="mentionslegales.html">Mentions Légales</a></p>
-
-    </footer>
 
 
-    
+    <!-- OPTIONAL JAVASRIPT -->
+    <!-- jQUERY FIRST, THEN POPPER.JS, THEN BOOTSTRAP JS -->
+
+
     <script type="text/javascript" src="Scripts/jquery-1.9.0.min.js"></script>
     <script type="text/javascript" src="Scripts/jquery.nivo.slider.js"></script>
     <script type="text/javascript">
@@ -123,11 +368,25 @@
         });
     </script>
 
-<script type="text/javascript" src="Public/JS/active.js"></script>
 
-<script type="text/javascript">
-    menuActive(1);
-</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript" src="Public/JS/slider.js"></script>
+    <script type="text/javascript" src="Public/JS/modal.js"></script>
+    <script type="text/javascript" src="Public/JS/cookie.js"></script>
+    <script type="text/javascript" src="Public/JS/active.js"></script>
+
+    <script type="text/javascript">
+        menuActive(1);
+    </script>
+
+
 
 
 </body>

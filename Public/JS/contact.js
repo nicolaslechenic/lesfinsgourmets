@@ -1,4 +1,4 @@
-       let formValid = document.getElementById('bouton_envoie');
+let formValid = document.getElementById('bouton_envoie');
        //------POUR LE NOM-----------
        let forgetlastname = document.getElementById('forgetlastname');
        let nom = document.getElementById('nom');
