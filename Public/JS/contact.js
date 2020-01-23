@@ -86,16 +86,6 @@ let formValid = document.getElementById('bouton_envoie');
        let forgetobjet = document.getElementById('forgetobjet');
        let objet = document.getElementById('objet').value;
 
-       formValid.addEventListener('click', function (event) {
-
-
-         if (objet === "") {
-           event.preventDefault();
-           forgetobjet.innerText = 'Objet Manquant';
-           forgetobjet.style.color = 'red';
-         }
-         console.log(objet);
-       });
 
 
        //--------POUR LE MESSAGE--------
@@ -103,12 +93,19 @@ let formValid = document.getElementById('bouton_envoie');
        let message = document.getElementById('message').value;
 
        formValid.addEventListener('click', function (event) {
-
+         event.preventDefault();
 
          if (message === "") {
-           event.preventDefault();
            forgetmessage.innerText = 'Message Manquant';
            forgetmessage.style.color = 'red';
          }
          console.log(message);
+
+         
+        if (objet === "") {
+          forgetobjet.innerText = 'Objet Manquant';
+          forgetobjet.style.color = 'red';
+        }
+        console.log(objet);
        });
+
