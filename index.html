@@ -75,19 +75,13 @@
                             <!-- MODAL BODY -->
                             <div class="modal-body">
                                 <form>
-                                    <p><label for="nom">Nom:</label>
-                                        <input type="text" name="lastNameConnect" id="lastNameConnect"
-                                            placeholder="Votre Nom" required>
-                                        <span id="forgetLastNameConnect"></span>
+                                    <p><label for="mailSign">Votre Email:</label>
+                                        <input type="text" name="mailSign" id="mailSign" placeholder="Votre Email"
+                                            required>
+                                        <span id="forgetMailSign"></span=>
                                     </p>
 
-
-                                    <p><label for="lastname">Prénom:</label>
-                                        <input type="text" name="firstNameConnect" id="firstNameConnect"
-                                            placeholder="Votre Prénom" required>
-                                        <span id="forgetFirstNameConnect"></span>
-                                    </p>
-
+                                    
                                     <p><label for="password">Votre Mot de passe:</label>
                                         <input type="text" name="passwordConnect" id="passwordConnect"
                                             placeholder="Mot de passe" required>
@@ -110,7 +104,7 @@
                 </div>
                 <!-- BUTTON TO OPEN THE MODAL -->
                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal1">
-                    Connection
+                    Connexion
                 </button>
 
 
@@ -128,6 +122,19 @@
                             <!-- MODAL BODY -->
                             <div class="modal-body">
                                 <form>
+                                    <p><label for="nom">Nom:</label>
+                                        <input type="text" name="lastNameConnect" id="lastNameConnect"
+                                            placeholder="Votre Nom" required>
+                                        <span id="forgetLastNameConnect"></span>
+                                    </p>
+
+
+                                    <p><label for="lastname">Prénom:</label>
+                                        <input type="text" name="firstNameConnect" id="firstNameConnect"
+                                            placeholder="Votre Prénom" required>
+                                        <span id="forgetFirstNameConnect"></span>
+                                    </p>
+
                                     <p><label for="mailSign">Votre Email:</label>
                                         <input type="text" name="mailSign" id="mailSign" placeholder="Votre Email"
                                             required>
@@ -230,13 +237,7 @@
 
     <main class="container">
 
-        <!---SLIDER----NIVO SLIDER-->
-        <!---- <div class="slider-wrapper theme-default">
-            <div id="slider" class="nivoSlider">
-                <img src="Public/Images/Photos/boeuf.jpg" alt="viande">
-                <img src="Public/Images/images1920/epices2.jpg" alt="épices">
-            </div>
-        </div>-->
+        
 
 
         <div class="container" id="titre2">
@@ -451,7 +452,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
-    <script type="text/javascript" src="Scripts/jquery.nivo.slider.js"></script>
+   
     <script type="text/javascript">
         $(window).load(function () {
             $('#slider').nivoSlider();
