@@ -9,9 +9,9 @@
         content="Bienvenue sur le site de l'épicerie fine des Fins Gourmets, vous pouvez trouver tous nos produits culinaire en ligne.">
     <meta name="keywords" content="fins gourmets, gastronomie">
     <title>Les Fins Gourmets</title>
-     <!------TYPE DE POLICE-------->
-     <link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
-     
+    <!------TYPE DE POLICE-------->
+    <link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
+
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -52,6 +52,7 @@
             <div class="col-md-6 bg-dark">
                 <form class="form-inline" action="/action_page.php">
                     <input class="form-control mr-sm-2" type="text" placeholder="Rechercher">
+                    <button class="btn btn-success" type="submit">Rechercher</button>
 
                 </form>
             </div>
@@ -81,7 +82,7 @@
                                         <span id="forgetMailSign"></span=>
                                     </p>
 
-                                    
+
                                     <p><label for="password">Votre Mot de passe:</label>
                                         <input type="text" name="passwordConnect" id="passwordConnect"
                                             placeholder="Mot de passe" required>
@@ -209,10 +210,10 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                                 Boutique</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Épicerie Fine</a>
-                                <a class="dropdown-item" href="#">Pâtisseries</a>
-                                <a class="dropdown-item" href="#">Macarons</a>
-                                <a class="dropdown-item" href="#">Confiseries</a>
+                                <a class="dropdown-item" href="epiceriefine.html">Épicerie Fine</a>
+                                <a class="dropdown-item" href="patisseries.html">Pâtisseries</a>
+                                <a class="dropdown-item" href="macarons.html">Macarons</a>
+                                <a class="dropdown-item" href="confiseries.html">Confiseries</a>
                             </div>
                         </li>
                         <!--FIN DU DROPDOWN-->
@@ -237,7 +238,7 @@
 
     <main class="container">
 
-        
+
 
 
         <div class="container" id="titre2">
@@ -295,7 +296,7 @@
 
 
                         <article class="produits" class="col-md-6">
-                            <a href="#">
+                            <a href="epiceriefine.html">
                                 <img src="Public/Images/images1920/epicerie-rayons.jpg">
                                 <h2>Épicerie Fine</h2>
                                 <p>Que l'on soit Sucré ou Salé, notre épicerie élabore pour vous des recettes
@@ -307,7 +308,7 @@
 
 
                         <article class="produits" class="col-md-6">
-                            <a href="#">
+                            <a href="patisseries.html">
                                 <img src="Public/Images/Photos/fraisier.jpg">
                                 <h2>Pâtisseries</h2>
                                 <p>Notre Pâtisserie est dédiée aux merveilleuses créations de notre talentueux chef
@@ -320,7 +321,7 @@
                     <div class="row">
 
                         <article class="produits" class="col-md-6">
-                            <a href="#">
+                            <a href="macarons.html">
                                 <img src="Public/Images/Photos/macarons.jpg">
                                 <h2>Macarons</h2>
                                 <p>les Macarons sont devenus synonymes de tradition et de gourmandise à la Française,
@@ -331,7 +332,7 @@
 
 
                         <article class="produits" class="col-md-6">
-                            <a href="#">
+                            <a href="confiseries.html">
                                 <img src="Public/Images/Photos/nounours.jpg">
                                 <h2>Confiseries</h2>
                                 <p>Voyagez dans notre univers merveilleux de la confiserie. Au programme, découvrez nos
@@ -361,62 +362,65 @@
     <!-----------FOOTER--------------->
     <div class="container-fluid bg-secondary">
         <footer class="pied">
+
             <div class="row">
                 <div class="col-sm-12 col-lg-15 col-xs-14">
                     <aside class="bas">
-                        <nav class="navbar navbar-expand-md justify-content-center navbar-dark">
+                        <div class="container">
+                            <nav class="navbar navbar-expand-md justify-content-center navbar-dark">
 
-                            <a class="nav-brand" href="#"> <i class="fas fa-home"></i></a>
+                                <a class="nav-brand" href="#"> <i class="fas fa-home"></i></a>
 
-                            <!-- TOGGLER/COLLAPSIBE BUTTON -->
-                            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#collapsibleNavbar">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+                                <!-- TOGGLER/COLLAPSIBE BUTTON -->
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#collapsibleNavbar">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
 
-                            <!-- LINKS -->
-                            <div class="collapse2 navbar-collapse justify-content-center" id="collapsibleNavbar">
-                                <ul class="navbar-nav">
+                                <!-- LINKS -->
+                                <div class="collapse2 navbar-collapse justify-content-center" id="collapsibleNavbar1">
+                                    <ul class="navbar-nav">
 
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="cgv.html">CGV</a>
-                                    </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="cgv.html">CGV</a>
+                                        </li>
 
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="plandusite.html">Plan du site</a>
-                                    </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="plandusite.html">Plan du site</a>
+                                        </li>
 
-                                    <li class="nav-item dropdown">
+                                        <li class="nav-item dropdown">
 
 
-                                        <!--DEBUT DU DROPDOWN-->
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
-                                            data-toggle="dropdown">
-                                            Boutique</a>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Épicerie Fine</a>
-                                            <a class="dropdown-item" href="#">Pâtisseries</a>
-                                            <a class="dropdown-item" href="#">Macarons</a>
-                                            <a class="dropdown-item" href="#">Confiseries</a>
-                                        </div>
-                                    </li>
-                                    <!--FIN DU DROPDOWN-->
+                                            <!--DEBUT DU DROPDOWN-->
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop1"
+                                                data-toggle="dropdown">
+                                                Boutique</a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="epiceriefine.html">Épicerie Fine</a>
+                                                <a class="dropdown-item" href="patisseries.html">Pâtisseries</a>
+                                                <a class="dropdown-item" href="macarons.html">Macarons</a>
+                                                <a class="dropdown-item" href="confiseries.html">Confiseries</a>
+                                            </div>
+                                        </li>
+                                        <!--FIN DU DROPDOWN-->
 
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="contact.html">Contact</a>
-                                    </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contact.html">Contact</a>
+                                        </li>
 
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="newsletter.html">Newsletter</a>
-                                    </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="newsletter.html">Newsletter</a>
+                                        </li>
 
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="agenda.html">Agenda</a>
-                                    </li>
-                                </ul>
-                            </div>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="agenda.html">Agenda</a>
+                                        </li>
+                                    </ul>
+                                </div>
 
-                        </nav>
+                            </nav>
+                        </div>
 
 
 
@@ -432,6 +436,7 @@
                             </ul>
                         </div>
 
+
                     </aside>
                     <p class="mentions">&copy; Greta 2019 tous droits réservés - <a href="mentionslegales.html">Mentions
                             Légales</a></p>
@@ -439,6 +444,7 @@
 
                 </div>
             </div>
+
         </footer>
     </div>
 
@@ -452,7 +458,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
-   
+
     <script type="text/javascript">
         $(window).load(function () {
             $('#slider').nivoSlider();
@@ -463,6 +469,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">

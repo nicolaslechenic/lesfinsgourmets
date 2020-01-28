@@ -324,6 +324,55 @@ h1 {
     padding-top: 15px;
 }
 
+/*----PAGE EPICERIE FINE----*/
+.salty{
+    position: relative;
+}
+.epiceriefine .salty img{
+    width: 250px;
+    height: 300px;
+    margin-left: 60px;
+    
+    
+    
+}
+
+.epiceriefine .salty button{
+    display: none;
+    position: absolute;
+}
+.epiceriefine .salty a:hover button {display: block;}
+
+#order{
+    
+	top: 130px;
+    right: 60px;
+    height: 40px;
+
+    
+}
+
+
+.epiceriefine .salty h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /*---CENTRER LE TITRE H2 SOUS L'IMAGE----*/
+    margin-left: 160px;
+    color: #A52A2A;
+    text-decoration: none;
+    align-items: center;
+    margin-left: 30%;
+
+}
+
+.epiceriefine .salty p{
+    text-align: center;
+    color: black;
+}
+
+.epiceriefine .salty a{
+    text-decoration: none;
+}
+
 
 /*----------FOOTER-------*/
 
@@ -379,6 +428,8 @@ p {
 .bas .reseaux ul li a img {
 
     width: 40px;
+    
+    
 
 }
 

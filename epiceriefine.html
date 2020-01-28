@@ -1,12 +1,11 @@
-<!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Page-404.">
-    <meta name="keywords" content="maintenance">
+    <meta name="description" content="Bienvenue sur la presentation des differents produits de notre site.">
+    <meta name="keywords" content="presentation, produits">
     <title>Présentation</title>
 
     <!------TYPE DE POLICE-------->
@@ -19,25 +18,15 @@
     <!--APPEL à FONTAWESOME POUR LES ICONES-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
 
-
-    <!-----------FEUILLE DE STYLE DU SLIDER---------------->
-
-    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
-
     <!------FEUILLE DE STYLE-------->
 
-    <link rel="stylesheet" href="Public/CSS/newsletter.css">
+
     <link rel="stylesheet" href="Public/CSS/styles.css">
     <link rel="stylesheet" href="Public/CSS/mobile.css">
-
 </head>
 
 <body>
     <div class="container-fluid bg-dark" id="front">
-
-
-
 
         <!-------LOGIN-------->
         <div class="row">
@@ -48,125 +37,8 @@
 
                 </form>
             </div>
-
-            <!-- BUTTON TO OPEN THE MODAL-->
-            <div class="col-md-6 bg-dark">
-                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">
-                    Inscrivez-Vous
-                </button>
-                <!-- THE MODAL CONNECTION -->
-                <div class="modal fade" id="myModal1">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-
-                            <!-- MODAL HEADER -->
-                            <div class="modal-header">
-                                <h4 class="modal-title">Se Connecter</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            </div>
-
-                            <!-- MODAL BODY -->
-                            <div class="modal-body">
-                                <form>
-                                    <p><label for="mailSign">Votre Email:</label>
-                                        <input type="text" name="mailSign" id="mailSign" placeholder="Votre Email"
-                                            required>
-                                        <span id="forgetMailSign"></span=>
-                                    </p>
-
-
-
-                                    <p><label for="password">Votre Mot de passe:</label>
-                                        <input type="text" name="passwordConnect" id="passwordConnect"
-                                            placeholder="Mot de passe" required>
-                                        <span id="forgetPasswordConnect"></span>
-                                    </p>
-
-                                    <p class="bouton"> <button id="bouton_envoieConnect" type="submit">Envoyer</button>
-                                        <button type="reset" value="Annuler">Annuler</button></p>
-
-                                </form>
-                            </div>
-
-                            <!-- MODAL FOOTER -->
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <!-- BUTTON TO OPEN THE MODAL -->
-                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal1">
-                    Connexion
-                </button>
-
-
-                <!-- THE MODAL INSCRIPTION -->
-                <div class="modal fade" id="myModal">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-
-                            <!-- MODAL HEADER -->
-                            <div class="modal-header">
-                                <h4 class="modal-title">S'inscrire</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            </div>
-
-                            <!-- MODAL BODY -->
-                            <div class="modal-body">
-                                <form>
-                                    <p><label for="nom">Nom:</label>
-                                        <input type="text" name="lastNameConnect" id="lastNameConnect"
-                                            placeholder="Votre Nom" required>
-                                        <span id="forgetLastNameConnect"></span>
-                                    </p>
-
-
-                                    <p><label for="lastname">Prénom:</label>
-                                        <input type="text" name="firstNameConnect" id="firstNameConnect"
-                                            placeholder="Votre Prénom" required>
-                                        <span id="forgetFirstNameConnect"></span>
-                                    </p>
-
-                                    <p><label for="mailSign">Votre Email:</label>
-                                        <input type="text" name="mailSign" id="mailSign" placeholder="Votre Email"
-                                            required>
-                                        <span id="forgetMailSign"></span=>
-                                    </p>
-
-
-                                    <p><label for="passwordSign">Votre Mot de passe:</label>
-                                        <input type="text" name="passwordSign" id="passwordSign"
-                                            placeholder="Mot de passe" required>
-                                        <span id="forgetPasswordSign"></span>
-                                    </p>
-
-                                    <p><label for="passwordConfirmSign">Confirmer Votre Mot de passe:</label>
-                                        <input type="text" name="passwordConfirmSign" id="passwordConfirmSign"
-                                            placeholder="Confirmer Mot de passe" required>
-                                        <span id="forgetPasswordConfirmSign"></span>
-                                    </p>
-
-                                    <p class="bouton"> <button id="bouton_envoieSign" type="submit">Envoyer</button>
-                                        <button type="reset" value="Annuler">Annuler</button></p>
-                                </form>
-                            </div>
-
-                            <!-- MODAL FOOTER -->
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
         </div>
     </div>
-
     <div class="container-fluid bg-secondary">
         <header class="container">
             <figure class="logo">
@@ -200,10 +72,11 @@
 
 
                             <!--DEBUT DU DROPDOWN-->
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop"
+                                data-toggle="dropdown">
                                 Boutique</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="epiceriefine.html">Épicerie Fine</a>
+                                <a class="dropdown-item text-white" href="epiceriefine.html">Épicerie Fine</a>
                                 <a class="dropdown-item" href="patisseries.html">Pâtisseries</a>
                                 <a class="dropdown-item" href="macarons.html">Macarons</a>
                                 <a class="dropdown-item" href="confiseries.html">Confiseries</a>
@@ -227,61 +100,137 @@
 
         </header>
     </div>
-
-
     <main class="container">
+        <div class="container">
+            <h1>Bienvenue sur notre boutique en ligne Épicerie Fine.</h1><br><br><br>
+        </div>
 
-        <!---SLIDER----NIVO SLIDER-->
-        <!---- <div class="slider-wrapper theme-default">
-                    <div id="slider" class="nivoSlider">
-                        <img src="Public/Images/Photos/1380565545_82641.jpg" alt="vin">
-                        <img src="Public/Images/images1920/fruit-932745_1920.jpg" alt="fruit">
-                    </div>
-                    </div> --->
+        <section class="epiceriefine">
+            <div class="offset-1 col-md-12">
+                <div class="row">
 
-        <p class="lego"><img src="Public/Images/Photos/lego.jpg"></p>
-        <P class="error">
-            <h1>404 PAGE</h1>
-        </P><br><br>
-        <h2>Vous pouvez nous contactez:</h2><br>
-        <h3>Tél : 02 97 46 66 66</h3>
+                    <article class="salty" class="col-md-4">
+                        <a href="#">
+                            <button type="button" id="order" class="btn btn-danger">
+                                Commandez
+                            </button>
+                            <img src="Public/Images/Photos/blocfoiegras.jpg">
+                            <h5>Foie Gras des Landes</h5>
+                            <p>17€</p>
+                        </a>
+                    </article>
+
+                    <article class="salty" class="col-md-4">
+                        <a href="#">
+                            <button type="button" id="order" class="btn btn-danger">
+                                Commandez
+                            </button>
+                            <img src="Public/Images/Photos/homardbreton.jpg">
+                            <h5>Homard Armoricain</h5>
+                            <p>17€</p>
+                        </a>
+                    </article>
+
+                    <article class="salty" class="col-md-4">
+                        <a href="#">
+                            <button type="button" id="order" class="btn btn-danger">
+                                Commandez
+                            </button>
+                            <img src="Public/Images/Photos/raviolisviande.jpg">
+                            <h5>Raviolis au Boeuf</h5>
+                            <p>17€</p>
+                        </a>
+                    </article>
+                </div>
+
+                <div class="row">
+
+                    <article class="salty" class="col-md-4">
+                        <a href="#">
+                            <button type="button" id="order" class="btn btn-danger">
+                                Commandez
+                            </button>
+                            <img src="Public/Images/Photos/tartaresaumon.jpg">
+                            <h5>Tartare de Saumon</h5>
+                            <p>17€</p>
+                        </a>
+                    </article>
+
+                    <article class="salty" class="col-md-4">
+                        <a href="#">
+                            <button type="button" id="order" class="btn btn-danger">
+                                Commandez
+                            </button>
+                            <img src="Public/Images/Photos/magret.jpg">
+                            <h5>Magret de Canard</h5>
+                            <p>17€</p>
+                        </a>
+                    </article>
+
+                    <article class="salty" class="col-md-4">
+                        <a href="#">
+                            <button type="button" id="order" class="btn btn-danger">
+                                Commandez
+                            </button>
+                            <img src="Public/Images/Photos/tomatemozza.jpg">
+                            <h5>Tomate Mozzarella</h5>
+                            <p>17€</p>
+                        </a>
+                    </article>
+
+
+                </div>
+
+                <div class="row">
+
+                    <article class="salty" class="col-md-4">
+                        <a href="#">
+                            <button type="button" id="order" class="btn btn-danger">
+                                Commandez
+                            </button>
+                            <img src="Public/Images/Photos/tourteveau.jpg">
+                            <h5>Tourte de Veau</h5>
+                            <p>17€</p>
+                        </a>
+                    </article>
+
+                    <article class="salty" class="col-md-4">
+                        <a href="#">
+                            <button type="button" id="order" class="btn btn-danger">
+                                Commandez
+                            </button>
+                            <img src="Public/Images/Photos/risoto.jpg">
+                            <h5>Risoto aux Légumes</h5>
+                            <p>17€</p>
+                        </a>
+                    </article>
+
+                    <article class="salty" class="col-md-4">
+                        <a href="#">
+                            <button type="button" id="order" class="btn btn-danger">
+                                Commandez
+                            </button>
+                            <img src="Public/Images/Photos/tarteflambesaumon.jpg">
+                            <h5>Tarte Flambé Saumon</h5>
+                            <p>17€</p>
+                        </a>
+                    </article>
+
+
+                </div>
+
+            </div>
+            </div>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </section>
 
 
     </main>
+
+
     <!-----------FOOTER--------------->
     <div class="container-fluid bg-secondary">
         <footer class="pied">
@@ -315,11 +264,11 @@
 
 
                                             <!--DEBUT DU DROPDOWN-->
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop1"
+                                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop1"
                                                 data-toggle="dropdown">
                                                 Boutique</a>
                                             <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="epiceriefine.html">Épicerie Fine</a>
+                                                <a class="dropdown-item text-white" href="epiceriefine.html">Épicerie Fine</a>
                                                 <a class="dropdown-item" href="patisseries.html">Pâtisseries</a>
                                                 <a class="dropdown-item" href="macarons.html">Macarons</a>
                                                 <a class="dropdown-item" href="confiseries.html">Confiseries</a>
@@ -332,7 +281,7 @@
                                         </li>
 
                                         <li class="nav-item">
-                                            <a class="nav-link text-white" href="newsletter.html">Newsletter</a>
+                                            <a class="nav-link" href="newsletter.html">Newsletter</a>
                                         </li>
 
                                         <li class="nav-item">
@@ -363,32 +312,16 @@
                             Légales</a></p>
 
 
+
                 </div>
             </div>
         </footer>
     </div>
-
-
-
-
-
-    <!-- OPTIONAL JAVASRIPT -->
-    <!-- jQUERY FIRST, THEN POPPER.JS, THEN BOOTSTRAP JS -->
-
-
-    <script type="text/javascript" src="Scripts/jquery-1.9.0.min.js"></script>
-    <script type="text/javascript" src="Scripts/jquery.nivo.slider.js"></script>
-    <script type="text/javascript">
-        $(window).load(function () {
-            $('#slider').nivoSlider();
-        });
-    </script>
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
@@ -396,14 +329,12 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
 
-    <script type="text/javascript" src="Public/JS/modal.js"></script>
 
     <script type="text/javascript" src="Public/JS/active.js"></script>
 
     <script type="text/javascript">
-        menuActive(9);
+        menuActive(11);
     </script>
-
 
 
 
