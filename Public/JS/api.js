@@ -15,7 +15,7 @@ function test(){
         data: {
             "token": token,
             "channel": channel,
-            "text": nom + "\n " + prenom + "\n " + mail + "\n " + objet + "\n " + message,
+            "text": nom + " " + prenom + " " + mail + " " + objet + " " + message + " ",
             
             
         },                      

@@ -9,8 +9,7 @@ body {
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #778899;
-    font-family: 'Playfair Display', serif;
-    
+    font-family: 'Girassol', cursive;
    
    
 
@@ -330,8 +329,8 @@ h1 {
     position: relative;
 }
 .epiceriefine .salty img{
-    width: 260px;
-    height: 250px;
+    width: 250px;
+    height: 300px;
     margin-left: 60px;
     
     
@@ -346,7 +345,7 @@ h1 {
 
 #order{
     
-	top: 100px;
+	top: 130px;
     right: 60px;
     height: 40px;
 
@@ -388,7 +387,6 @@ h1 {
 
 .collapse2 .navbar-nav .nav-item .nav-link {
     margin: 30px;
-    margin-bottom: 55px;
 }
 
 .collapse2 .navbar-nav .nav-item a {
@@ -437,13 +435,4 @@ p {
 
 .mentions {
     margin: 0 auto;
-}
-
-.containerstore{
-    display: flex;
-    justify-content: center;
-   
-}
-.store{
-    width: 50%;
 }

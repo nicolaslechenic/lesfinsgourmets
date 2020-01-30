@@ -46,6 +46,114 @@
 
                 </form>
             </div>
+
+            <!-- BUTTON TO OPEN THE MODAL-->
+            <div class="col-md-6 bg-dark">
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">
+                    Inscrivez-Vous
+                </button>
+                <!-- THE MODAL CONNECTION -->
+                <div class="modal fade" id="myModal1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+
+                            <!-- MODAL HEADER -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Se Connecter</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- MODAL BODY -->
+                            <div class="modal-body">
+                                <form>
+                                    <p><label for="nom">Nom:</label>
+                                        <input type="text" name="lastNameConnect" id="lastNameConnect"
+                                            placeholder="Votre Nom" required>
+                                        <span id="forgetLastNameConnect"></span>
+                                    </p>
+
+
+                                    <p><label for="lastname">Prénom:</label>
+                                        <input type="text" name="firstNameConnect" id="firstNameConnect"
+                                            placeholder="Votre Prénom" required>
+                                        <span id="forgetFirstNameConnect"></span>
+                                    </p>
+
+                                    <p><label for="password">Votre Mot de passe:</label>
+                                        <input type="text" name="passwordConnect" id="passwordConnect"
+                                            placeholder="Mot de passe" required>
+                                        <span id="forgetPasswordConnect"></span>
+                                    </p>
+
+                                    <p class="bouton"> <button id="bouton_envoieConnect" type="submit">Envoyer</button>
+                                        <button type="reset" value="Annuler">Annuler</button></p>
+
+                                </form>
+                            </div>
+
+                            <!-- MODAL FOOTER -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- BUTTON TO OPEN THE MODAL -->
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal1">
+                    Connexion
+                </button>
+
+
+                <!-- THE MODAL INSCRIPTION -->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+
+                            <!-- MODAL HEADER -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">S'inscrire</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- MODAL BODY -->
+                            <div class="modal-body">
+                                <form>
+                                    <p><label for="mailSign">Votre Email:</label>
+                                        <input type="text" name="mailSign" id="mailSign" placeholder="Votre Email"
+                                            required>
+                                        <span id="forgetMailSign"></span=>
+                                    </p>
+
+
+                                    <p><label for="passwordSign">Votre Mot de passe:</label>
+                                        <input type="text" name="passwordSign" id="passwordSign"
+                                            placeholder="Mot de passe" required>
+                                        <span id="forgetPasswordSign"></span>
+                                    </p>
+
+                                    <p><label for="passwordConfirmSign">Confirmer Votre Mot de passe:</label>
+                                        <input type="text" name="passwordConfirmSign" id="passwordConfirmSign"
+                                            placeholder="Confirmer Mot de passe" required>
+                                        <span id="forgetPasswordConfirmSign"></span>
+                                    </p>
+
+                                    <p class="bouton"> <button id="bouton_envoieSign" type="submit">Envoyer</button>
+                                        <button type="reset" value="Annuler">Annuler</button></p>
+                                </form>
+                            </div>
+
+                            <!-- MODAL FOOTER -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
     </div>
 
@@ -58,7 +166,7 @@
 
             <nav class="navbar navbar-expand-md justify-content-center navbar-dark">
 
-                
+                <a class="nav-brand" href="#"> <i class="fas fa-home"></i></a>
 
                 <!-- TOGGLER/COLLAPSIBE BUTTON -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -171,6 +279,27 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </main>
     <footer class="pied">
         <div class="row">
@@ -218,6 +347,7 @@
     </script>
 
     <script type="text/javascript" src="Public/JS/inscription.js"></script>
+    <script type="text/javascript" src="Public/JS/modal.js"></script>
     <script type="text/javascript" src="Public/JS/cookie.js"></script>
 
 
