@@ -133,7 +133,7 @@ let connectValid = document.getElementById('bouton_envoieConnect');
 
     
      //-----SERT A DETECTER LE CLIQUE D'UN UTILISATEUR
-     connectValid.addEventListener('click', validationPasswordSign);
+     signValid.addEventListener('click', validationPasswordSign);
 
 
      function validationPasswordSign(event) {
